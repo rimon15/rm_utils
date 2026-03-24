@@ -9,7 +9,7 @@ description = "My utility functions for logging/config management/deep learning,
 authors = [
     { name = "Rimon", email = "melamed.rimon@gmail.com" }
 ]
-requires-python = ">=3.13"
+requires-python = ">=3.10"
 dependencies = [
     "loguru>=0.7.3",
     "omegaconf>=2.3.0",
