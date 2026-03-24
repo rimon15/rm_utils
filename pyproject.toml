@@ -3,9 +3,12 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "rm_utils"
-version = "0.0.1"
-description = "My utility functions for logging/config management, etc."
+name = "rimutil"
+version = "0.1.0"
+description = "My utility functions for logging/config management/deep learning, etc."
+authors = [
+    { name = "Rimon", email = "melamed.rimon@gmail.com" }
+]
 requires-python = ">=3.13"
 dependencies = [
     "loguru>=0.7.3",
@@ -14,13 +17,24 @@ dependencies = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/rimon15/rm_utils"
+"Homepage" = "https://github.com/rimon15/rimutil"
 
 [project.optional-dependencies]
 dev = [
   "pytest>=8.3.5",
   "pre-commit>=4.2.0",
   "ruff>=0.11.5",
+]
+dl = [
+  "numpy",
+  "torch",
+]
+all = [
+  "pytest>=8.3.5",
+  "pre-commit>=4.2.0",
+  "ruff>=0.11.5",
+  "numpy",
+  "torch",
 ]
 
 [tool.pytest.ini_options]

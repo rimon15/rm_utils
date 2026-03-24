@@ -2,7 +2,7 @@ from types import SimpleNamespace
 
 from loguru import logger
 
-from rm_utils.log import loguru_before_sleep, setup_logger
+from rimutil.log import loguru_before_sleep, setup_logger
 
 
 def test_setup_logger_writes_messages_to_log_file(tmp_path) -> None:

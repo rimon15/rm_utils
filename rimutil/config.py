@@ -3,7 +3,7 @@ from collections.abc import Callable
 from functools import wraps
 from typing import Concatenate, ParamSpec, TypeVar, cast
 
-from rm_utils.log import setup_logger
+from rimutil.log import setup_logger
 
 
 ConfigT = TypeVar("ConfigT")

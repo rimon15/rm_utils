@@ -3,7 +3,7 @@ from unittest.mock import Mock
 
 from omegaconf import OmegaConf
 
-import rm_utils.config as config_module
+import rimutil.config as config_module
 
 
 @dataclass
