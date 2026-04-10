@@ -14,6 +14,9 @@ With the deep-learning helpers:
 pip install "rimutil[dl]"
 ```
 
+Installing `rimutil[dl]` also brings in `lovely-tensors`. Once that dependency is present,
+importing `rimutil` automatically applies `lovely_tensors.monkey_patch()`.
+
 ## Config And Entrypoints
 `BaseConfig` gives each project a shared `project_name`, and `setup_entrypoint()` handles:
 
@@ -143,6 +146,9 @@ Behavior notes:
 
 ## Deep Learning Helpers
 The DL utilities live in `rimutil.dl` and require the optional `dl` extra.
+
+If `lovely-tensors` is installed, importing `rimutil` enables its tensor pretty-printing
+automatically.
 
 Seed Python, NumPy, and PyTorch:
 
